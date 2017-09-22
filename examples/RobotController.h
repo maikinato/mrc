@@ -9,35 +9,8 @@
 #define pin_servo_1 4
 #define pin_servo_2 5
 #define pin_servo_3 6
-#define pin_servo_4 9
-#define pin_servo_5 10
-
-
-// pinNumber, maxAngularVel degree/sec, calibMin, calibMax, angleDegMin, angleDegMax, home position
-const float servoConfig[6][7] = {
-    { pin_servo_0,  150 * DEG_TO_RAD,  700.00, 2380.00,  -90.00 * DEG_TO_RAD,  90.00 * DEG_TO_RAD, 0 },
-    { pin_servo_1,  150 * DEG_TO_RAD,  710.00, 1909.00,  -45.00 * DEG_TO_RAD,  90.00 * DEG_TO_RAD, 0 },
-    { pin_servo_2,  150 * DEG_TO_RAD, 2290.00,  650.00,  -45.00 * DEG_TO_RAD, 135.00 * DEG_TO_RAD, 0 },
-    { pin_servo_3,  150 * DEG_TO_RAD,  740.00, 2260.00,  -90.00 * DEG_TO_RAD,  85.00 * DEG_TO_RAD, 0 },
-    { pin_servo_4,  150 * DEG_TO_RAD,  730.00, 2340.00, -140.00 * DEG_TO_RAD,  15.00 * DEG_TO_RAD, 0 },
-    { pin_servo_5,  150 * DEG_TO_RAD,  740.00, 2200.00,  -90.00 * DEG_TO_RAD,  60.00 * DEG_TO_RAD, 0 }
-};
-
-float logicalAngleLimits[6][2] = {
-    { -180 * DEG_TO_RAD, 180 * DEG_TO_RAD },
-    { -180 * DEG_TO_RAD, 180 * DEG_TO_RAD },
-    { -180 * DEG_TO_RAD, 180 * DEG_TO_RAD },
-    { -180 * DEG_TO_RAD, 180 * DEG_TO_RAD },
-    { -180 * DEG_TO_RAD, 180 * DEG_TO_RAD },
-    { -180 * DEG_TO_RAD, 180 * DEG_TO_RAD }
-};
-
-float geometry[5][3] = {
-    {    5, 0,  7.3 },
-    {    0, 0, 13.0 },
-    {    1, 0,    2 },
-    { 12.6, 0,    0 },
-    {    0, 0, -3.6 }
+AD }
+6 }
 };
 
 RobotController *_RobotController;
